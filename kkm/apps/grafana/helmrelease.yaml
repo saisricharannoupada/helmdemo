@@ -1,13 +1,13 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: litmus-uns
+  name: grafana
   namespace: grafana
 spec:
   interval: 1m
   chart:
     spec:
-      chart: litmus-uns        # Name of the chart
+      chart: grafana       # Name of the chart
       version: latest           # Specific version of the chart
       sourceRef:
         kind: HelmRepository
