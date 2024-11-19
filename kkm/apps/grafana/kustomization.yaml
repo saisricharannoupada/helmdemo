@@ -7,4 +7,4 @@ resources:
   - helmrepository.yaml
   - helmrelease.yaml
 
-namespace: uns
+namespace: grafana
