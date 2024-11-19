@@ -131,7 +131,7 @@ data:
       ##   GKE, AWS & OpenStack)
       ##
       # storageClass: "-"
-      accessMode: ReadWriteOnce
+      accessMode: ReadWriteMany
       size: 50Gi
       mountPath: /var/lib/influxdb2
       subPath: ""

@@ -422,7 +422,7 @@ data:
       enabled: true
       # storageClassName: default
       accessModes:
-        - ReadWriteOnce
+        - ReadWriteMany
       size: 10Gi
       # annotations: {}
       finalizers:
