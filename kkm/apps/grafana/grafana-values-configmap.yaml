@@ -1398,7 +1398,7 @@ data:
         ## Add ports to the egress by specifying - port: <port number>
         ## E.X.
         ## - port: 80
-         - port: 443
+        ## - port: 443
         ##
         ## @param networkPolicy.egress.to Allow egress traffic to specific destinations
         to: []
