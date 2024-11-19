@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: grafana-values
-  namespace: uns
+  namespace: grafana
 data:
   values.yaml: |
     global:
