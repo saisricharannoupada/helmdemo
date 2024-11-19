@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: postgresql       # Name of the chart
-      version: 2.27.0          # Specific version of the chart
+      #version: 2.27.0          # Specific version of the chart
       sourceRef:
         kind: HelmRepository
         name: postgresql-helm-repo
