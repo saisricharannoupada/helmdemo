@@ -1,0 +1,24 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: influxdb
+  namespace: influxdb
+spec:
+  interval: 1m
+  chart:
+    spec:
+      chart: influxdb2       # Name of the chart
+      version: 2.1.2          # Specific version of the chart
+      sourceRef:
+        kind: HelmRepository
+        name: influxdb-helm-repo
+        namespace: influxdb
+  values:
+    replicaCount: 1            # Example: Set the number of replicas
+    service:
+      type: LoadBalancer         # Example: Use LoadBalancer for external access
+    metrics:
+      enabled: true              # Example: Enable Prometheus metrics
+  valuesFrom:
+    - kind: ConfigMap
+      name: influxdb-values   
