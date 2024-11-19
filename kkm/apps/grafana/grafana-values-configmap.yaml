@@ -30,7 +30,7 @@ data:
       # useExistingClusterRole: name-of-some-clusterRole
       pspEnabled: false
       pspUseAppArmor: false
-      namespaced: false
+      namespaced: true
       extraRoleRules: []
       # - apiGroups: []
       #   resources: []
