@@ -10,8 +10,8 @@ data:
       tag: 2.7
       pullPolicy: IfNotPresent
       ## If specified, use these secrets to access the images
-        pullSecrets:
-          - influxdb-acr-secret
+      pullSecrets:
+        - influxdb-acr-secret
     
     ## Annotations to be added to InfluxDB pods
     ##
