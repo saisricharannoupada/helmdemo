@@ -8,7 +8,7 @@ spec:
   chart:
     spec:
       chart: grafana       # Name of the chart
-      version: latest           # Specific version of the chart
+      version: 8.6.0           # Specific version of the chart
       sourceRef:
         kind: HelmRepository
         name: grafana-helm-repo
