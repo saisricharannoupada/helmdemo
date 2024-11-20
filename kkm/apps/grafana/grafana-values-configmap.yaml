@@ -420,9 +420,9 @@ data:
     persistence:
       type: pvc
       enabled: true
-      # storageClassName: default
+      # storageClassName: azurefile
       accessModes:
-        - ReadWriteOnce
+        - ReadWriteMany
       size: 10Gi
       # annotations: {}
       finalizers:
