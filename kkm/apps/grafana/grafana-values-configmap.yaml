@@ -53,7 +53,7 @@ data:
       # autoMount: false
       automountServiceAccountToken: false
     
-    replicas: 2
+    replicas: 1
     
     ## Create a headless service for the deployment
     headlessService: false
@@ -420,7 +420,7 @@ data:
     persistence:
       type: pvc
       enabled: true
-      storageClassName: azurefile
+      # storageClassName: default
       accessModes:
         - ReadWriteMany
       size: 10Gi
@@ -1416,7 +1416,7 @@ data:
     
     # Enable backward compatibility of kubernetes where version below 1.13 doesn't have the enableServiceLinks option
     enableKubeBackwardCompatibility: false
-    useStatefulSet: true
+    useStatefulSet: false
     # Create a dynamic manifests via values:
     extraObjects: []
       # - apiVersion: "kubernetes-client.io/v1"
