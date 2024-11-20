@@ -64,7 +64,7 @@ data:
     ## Create HorizontalPodAutoscaler object for deployment type
     #
     autoscaling:
-      enabled: true
+      enabled: false
       minReplicas: 1
       maxReplicas: 5
       targetCPU: "60"
