@@ -420,7 +420,7 @@ data:
     persistence:
       type: pvc
       enabled: true
-      # storageClassName: azurefile
+      storageClassName: azurefile
       accessModes:
         - ReadWriteMany
       size: 10Gi
