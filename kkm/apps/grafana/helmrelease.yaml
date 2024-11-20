@@ -14,7 +14,6 @@ spec:
         name: grafana-helm-repo
         namespace: grafana
   values:
-    replicaCount: 2  
     service:
       type: LoadBalancer         # Example: Use LoadBalancer for external access
     metrics:
