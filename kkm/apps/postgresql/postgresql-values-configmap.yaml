@@ -116,9 +116,9 @@ data:
     ##
     image:
       registry: litmus.azurecr.io
-      repository: postgres
+      repository: postgres12
       tag: 12
-      digest: "389e0d9c01e7d6a6b0ca2db9f684af65e76d7f73315e25a38ecb8c269e5fa757"
+      digest: "sha256:389e0d9c01e7d6a6b0ca2db9f684af65e76d7f73315e25a38ecb8c269e5fa757"
       ## Specify a imagePullPolicy
       ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
       ##
