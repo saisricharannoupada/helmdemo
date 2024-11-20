@@ -1394,7 +1394,7 @@ data:
         blockDNSResolution: false
         ##
         ## @param networkPolicy.egress.ports Add individual ports to be allowed by the egress
-        ports: []
+        ports:
         ## Add ports to the egress by specifying - port: <port number>
         ## E.X.
         ## - port: 80
@@ -1416,7 +1416,7 @@ data:
     
     # Enable backward compatibility of kubernetes where version below 1.13 doesn't have the enableServiceLinks option
     enableKubeBackwardCompatibility: false
-    useStatefulSet: false
+    useStatefulSet: true
     # Create a dynamic manifests via values:
     extraObjects: []
       # - apiVersion: "kubernetes-client.io/v1"
