@@ -115,10 +115,10 @@ data:
     ## @param image.debug Specify if debug values should be set
     ##
     image:
-      registry: litmus.azurecr.io
-      repository: postgres12
-      tag: 12
-      digest: "sha256:389e0d9c01e7d6a6b0ca2db9f684af65e76d7f73315e25a38ecb8c269e5fa757"
+      registry: docker.io
+      repository: bitnami/postgresql
+      tag: 12.20.0-debian-12-r26
+      digest: ""
       ## Specify a imagePullPolicy
       ## ref: https://kubernetes.io/docs/concepts/containers/images/#pre-pulled-images
       ##
@@ -127,8 +127,8 @@ data:
       ## Secrets must be manually created in the namespace.
       ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
       ## Example:
-      pullSecrets:
-        - postgresql-acr-secret
+      ## pullSecrets:
+      ##  - postgresql-acr-secret
       ##
       pullSecrets: []
       ## Set to true if you would like to see extra information on logs
